@@ -1,3 +1,5 @@
+variable "org"{
+}
 
 variable "environment"{
    type = "string"
