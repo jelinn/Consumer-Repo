@@ -1,6 +1,9 @@
 variable "org"{
 }
 
+variable "region"{
+}
+
 variable "environment"{
    type = "string"
   }
