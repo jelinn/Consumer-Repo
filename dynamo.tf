@@ -1,3 +1,16 @@
+data "terraform_remote_state" "network" {
+  backend = "atlas"
+
+  config {
+    name = "${var.org}/${var.workspace_name}"
+  }
+}
+
+provider "aws" {
+  region = "${data.terraform_remote_state.network.region}"
+}
+
+
 variable "environment"{
    type = "string"
   }
