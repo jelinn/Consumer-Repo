@@ -1,3 +1,6 @@
+variable "org"{
+}
+
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
   name           = "${var.org}-GameScores"
   billing_mode   = "PROVISIONED"
