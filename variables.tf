@@ -1,3 +1,5 @@
+variable "org" {}
+variable "workspace_name" {}
 
 variable "AWS_REGION" {
 	default = "us-east-1"
